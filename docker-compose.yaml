@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  notesapi:
+    image: notesapi
+    container_name: notesapi
+    restart: always
+    ports:
+      - 10000:5000
+    tty: true
+    networks:
+      - notes_network
+
+
+networks:
+  notes_network:
+    name: notes_network
+    driver: bridge

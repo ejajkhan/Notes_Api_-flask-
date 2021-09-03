@@ -1,0 +1,4 @@
+
+To post data use this command
+curl -X POST -H "Content-Type: application/vnd.api+json"  -d '{"name":"aronno","body":"your dad"}' 127.0.0.1:5000/note
+
