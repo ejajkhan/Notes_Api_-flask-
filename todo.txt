@@ -1,0 +1,2 @@
+1. Add authenticaion
+2. Add user based personalised notes
