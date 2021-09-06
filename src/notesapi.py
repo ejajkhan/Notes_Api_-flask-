@@ -2,7 +2,7 @@
 from datetime import datetime, time
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
+
 import os
 
 # Init app
@@ -15,7 +15,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Init db
 db = SQLAlchemy(app)
 # Init ma
-ma = Marshmallow(app)
 
 # Note Class/Model
 class Note(db.Model):
