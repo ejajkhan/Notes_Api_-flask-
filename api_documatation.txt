@@ -2,3 +2,12 @@
 To post data use this command
 curl -X POST -H "Content-Type: application/vnd.api+json"  -d '{"name":"aronno","body":"your dad"}' 127.0.0.1:5000/note
 
+# To see all notes
+curl -X GET -H "Content-Type: application/vnd.api+json"   127.0.0.1:5000/note
+
+
+# To delete a number
+curl -X DELETE -H "Content-Type: application/vnd.api+json"   127.0.0.1:5000/note/3
+
+# To update a note
+ curl -X PUT -H "Content-Type: application/vnd.api+json"  -d '{"name":"detective","body":"loveme"}' 127.0.0.1:5000/note/1
